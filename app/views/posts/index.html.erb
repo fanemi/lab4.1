@@ -5,7 +5,7 @@
 	<small><%=post.created_at%></small>
 	<%= link_to 'show', post_path(post) %>
 	<%= link_to 'edit', edit_post_path(post) %>
-	<%#= link_to 'destroy', post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %>
+	<%= link_to 'destroy', post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %>
 <%end%>
 <br/>
 <%= link_to 'new', new_post_path %>
